@@ -2,7 +2,7 @@ use std::fmt::{Display, Formatter, Result};
 
 use rocket::serde::{Deserialize, Serialize};
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(crate = "rocket::serde")]
 pub struct Notification {
     pub product_title: String,
