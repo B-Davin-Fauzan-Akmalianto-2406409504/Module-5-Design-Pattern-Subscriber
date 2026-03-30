@@ -63,10 +63,10 @@ You can install Postman via this website: https://www.postman.com/downloads/
 -   **STAGE 1: Implement models and repositories**
     -   [x] Commit: `Create Notification model struct.`
     -   [x] Commit: `Create SubscriberRequest model struct.`
-    -   [ ] Commit: `Create Notification database and Notification repository struct skeleton.`
-    -   [ ] Commit: `Implement add function in Notification repository.`
-    -   [ ] Commit: `Implement list_all_as_string function in Notification repository.`
-    -   [ ] Write answers of your learning module's "Reflection Subscriber-1" questions in this README.
+    -   [x] Commit: `Create Notification database and Notification repository struct skeleton.`
+    -   [x] Commit: `Implement add function in Notification repository.`
+    -   [x] Commit: `Implement list_all_as_string function in Notification repository.`
+    -   [x] Write answers of your learning module's "Reflection Subscriber-1" questions in this README.
 -   **STAGE 3: Implement services and controllers**
     -   [ ] Commit: `Create Notification service struct skeleton.`
     -   [ ] Commit: `Implement subscribe function in Notification service.`
@@ -85,5 +85,8 @@ This is the place for you to write reflections:
 ### Mandatory (Subscriber) Reflections
 
 #### Reflection Subscriber-1
+1. Karena mutex itu hanya membolehkan 1 pengguna yang memakai data tersebut. Untuk notifikasi yang dapat dibaca banyak orang sekaligus, RwLock lebih cocok karena banyak orang bisa baca sekaligus, lalu jika data diubah/di write, maka tidak akan ada yg bisa baca.
+
+2. Di Rust lebih ketat soal keamanan, kalau disini khususnya agar make sure bahwa tidak terjadi race condition dimana ada beberapa thread yang mengotak atik data tersebut secara bersamaan dan menyebabkan error. Makanya perlu RwLock agar memastikan bahwa cuma maksimal 1 yang dapat mengotak atik pada saat itu.  
 
 #### Reflection Subscriber-2
