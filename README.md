@@ -68,16 +68,16 @@ You can install Postman via this website: https://www.postman.com/downloads/
     -   [x] Commit: `Implement list_all_as_string function in Notification repository.`
     -   [x] Write answers of your learning module's "Reflection Subscriber-1" questions in this README.
 -   **STAGE 3: Implement services and controllers**
-    -   [ ] Commit: `Create Notification service struct skeleton.`
-    -   [ ] Commit: `Implement subscribe function in Notification service.`
-    -   [ ] Commit: `Implement subscribe function in Notification controller.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification service.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification controller.`
-    -   [ ] Commit: `Implement receive_notification function in Notification service.`
-    -   [ ] Commit: `Implement receive function in Notification controller.`
-    -   [ ] Commit: `Implement list_messages function in Notification service.`
-    -   [ ] Commit: `Implement list function in Notification controller.`
-    -   [ ] Write answers of your learning module's "Reflection Subscriber-2" questions in this README.
+    -   [x] Commit: `Create Notification service struct skeleton.`
+    -   [x] Commit: `Implement subscribe function in Notification service.`
+    -   [x] Commit: `Implement subscribe function in Notification controller.`
+    -   [x] Commit: `Implement unsubscribe function in Notification service.`
+    -   [x] Commit: `Implement unsubscribe function in Notification controller.`
+    -   [x] Commit: `Implement receive_notification function in Notification service.`
+    -   [x] Commit: `Implement receive function in Notification controller.`
+    -   [x] Commit: `Implement list_messages function in Notification service.`
+    -   [x] Commit: `Implement list function in Notification controller.`
+    -   [x] Write answers of your learning module's "Reflection Subscriber-2" questions in this README.
 
 ## Your Reflections
 This is the place for you to write reflections:
@@ -90,3 +90,8 @@ This is the place for you to write reflections:
 2. Di Rust lebih ketat soal keamanan, kalau disini khususnya agar make sure bahwa tidak terjadi race condition dimana ada beberapa thread yang mengotak atik data tersebut secara bersamaan dan menyebabkan error. Makanya perlu RwLock agar memastikan bahwa cuma maksimal 1 yang dapat mengotak atik pada saat itu.  
 
 #### Reflection Subscriber-2
+1. Not yet, karna saya jujur mengerjakan ini di mepet mepet deadline dan tidak sempat.
+
+2. Observer pattern sangat memudahkan untuk menampung banyak subscriber dalam satu main app. Namun, kalau sudah beranjak ke berbagai main app, observer pattern seperti di tutorial tidak bisa dipakai karna sifatnya yg memakai satu system untuk diri sendiri.
+
+3. Belum, namun seharusnya memang sangat membantu bagi rekan rekan kelompok agar tidak perlu susah2 menjelaskan ulang ke setiap orang, dan mempercepat workflow.
